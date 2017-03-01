@@ -56,4 +56,8 @@ input, textarea, select {
   clear: both;
   visibility: hidden; }
 
+.wrap {
+  width: 1200px;
+  margin: 0px auto; }
+
 /*# sourceMappingURL=main.css.map */
