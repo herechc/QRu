@@ -1,6 +1,14 @@
-/*nav*/
+/*resize*/
+//nav
 @media (min-width: 768px){
   .navbar-nav{
-
+    float: right!important;
+    li{
+      a{
+        width:168px;
+        color: #fff;
+        font-size: 18px;
+      }
+    }
   }
 }

@@ -60,4 +60,13 @@ input, textarea, select {
   width: 1200px;
   margin: 0px auto; }
 
+/*resize*/
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: right !important; }
+    .navbar-nav li a {
+      width: 168px;
+      color: #fff;
+      font-size: 18px; } }
+
 /*# sourceMappingURL=main.css.map */
