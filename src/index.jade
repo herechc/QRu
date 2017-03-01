@@ -3,28 +3,46 @@ html(lang='en')
     head
         meta(http-equiv="Content-Type" content="text/html; charset=utf-8" )
         meta(name="renderer" content="webkit")
-        meta(name="viewport" content="width=640")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
         title QRu
+        link(href="css/jquery.fullPage.css",rel="stylesheet")
+        link(href="css/bootstrap/bootstrap.min.css",rel="stylesheet")
         link(href="css/main.css",rel="stylesheet")
-        link(href="css/jquery.fullPage.css")
     body
+        .navbar.navbar-default.navbar-fixed-top
+            .container
+               .navbar-header
+                    button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+                        span.sr-only
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a(class="navbar-brand" href="#")
+                        haha
+               #navbar.navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li
+                            a(href="") 首页
+                        li
+                            a(href="") 业务领域
+                        li
+                            a(href="") 企业责任
+                        li
+                            a(href="") 咨询报告
+                        li
+                            a(href="") 联系我们
         .container#page
-            .nav-toggle
-                .icon
-            .content
-                .headerbox1
-                    .wrap
-                        a(href="" class="")
-                .headerbox2
-                    .wrap
 
 
 
 
 
 
-        script(src="scripts/jquery.min.js")
-        script(src="scripts/jquery.fullPage.min.js")
+
+
+        script(src="scripts/plugs/jquery.min.js")
+        script(src="scripts/plugs/bootstrap.min.js")
+        script(src="scripts/plugs/jquery.fullPage.min.js")
         script(src="scripts/main.js")
 
 
