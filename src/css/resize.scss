@@ -1,14 +1,61 @@
 /*resize*/
-//nav
 @media (min-width: 768px){
+  //nav
   .navbar-nav{
     float: right!important;
     li{
+      &:hover{
+        label{
+          display: block;
+        }
+      }
       a{
         width:168px;
-        color: #fff;
+        color: #fff!important;
         font-size: 18px;
+        text-align: center;
+        padding:27px 0px!important;
+        span{
+          color:rgba(255,255,255,0.5);
+          margin-top: -2px;
+          float: right;
+        }
+      }
+      label{
+        width:20px;
+        display: none;
+        margin: 2px auto;
+        border-top: 1px solid #fff;
+      }
+      &.cur{
+        label{
+          display: block;
+        }
       }
     }
   }
+  .owl-dots{
+    top:760px;
+  }
+  .banners{
+    .slide{
+      top:-200px!important;
+    }
+  }
+}
+@media only screen and (max-width: 640px){
+  .slide{
+    .img{
+      height:1136px;
+    }
+    height:1136px;
+    .des{
+      left: 560px!important;
+      top: 180px!important;
+    }
+    .text{
+      top:30%!important;
+    }
+  }
+
 }

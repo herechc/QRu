@@ -1,2 +1,84 @@
 @import "default/default";
 @import "resize";
+@import "default/common";
+/*homepage*/
+.page{
+  height:100%;
+  width:100%;
+}
+.navbar-header{
+  height:79px
+}
+.navbar-toggle{
+  border: none;
+  margin-top:9px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color:transparent;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #fff;
+  width:40px;
+  margin-top: 8px;
+  &:last-child{
+    width:20px;
+    float: right;
+  }
+}
+.navbar-brand{
+  padding-top: 8px!important;
+}
+.navbar-default{
+  background: #000!important;
+}
+.logo{
+  float: left;
+}
+.banners{
+  width:100%;
+  overflow: hidden;
+  position: relative;
+  height:100%;
+  .slide{
+    position: absolute;
+    top: 0px;
+    //left: 50%;
+    //margin-left: -960px;
+    width: 1920px;
+    .owl-dots{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -14px;
+    }
+    .item{
+      width:100%;
+      position: relative;
+      img {
+        display: inline;
+      }
+    }
+    .text{
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      img{
+        width:auto;
+      }
+    }
+    .des{
+      position: absolute;
+      left: 600px;
+      top: 180px;
+      img{
+        width:auto
+      }
+    }
+  }
+}
+/*homeabout*/
+.homeabout{
+  width:100%;
+}

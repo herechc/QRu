@@ -3,9 +3,11 @@ html(lang='en')
     head
         meta(http-equiv="Content-Type" content="text/html; charset=utf-8" )
         meta(name="renderer" content="webkit")
-        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(name="viewport" content="width=640")
         title QRu
         link(href="css/jquery.fullPage.css",rel="stylesheet")
+        link(rel="stylesheet" href="css/owl.carousel/owl.carousel.css")
+        link(rel="stylesheet" href="css/owl.carousel/owl.theme.default.css")
         link(href="css/bootstrap/bootstrap.min.css",rel="stylesheet")
         link(href="css/main.css",rel="stylesheet")
     body
@@ -18,23 +20,62 @@ html(lang='en')
                         span.icon-bar
                         span.icon-bar
                     a(class="navbar-brand" href="#")
-                        haha
+                        img(src="images/logo.png" class="logo")
                #navbar.navbar-collapse.collapse
                     ul.nav.navbar-nav
-                        li
+                        li.cur
                             a(href="") 首页
+                                span |
+                                label
                         li
                             a(href="") 业务领域
+                                span |
+                                label
                         li
                             a(href="") 企业责任
+                                span |
+                                label
                         li
                             a(href="") 咨询报告
+                                span |
+                                label
                         li
                             a(href="") 联系我们
-        .container#page
+                                span |
+                                label
+        .page
+            .banners.section
+                .slide#owl-carousel.owl-carousel.owl-theme
+                    .item
+                        img(src="uploads/hpage-Banner1.jpg" class="img")
+                        .text
+                            img(class="tit" src="images/hp-tit.png")
+                            a(href="#" class="ui-btn-more")
+                        .des
+                            img(class="des" src="images/hp-des.png")
 
-
-
+                    .item
+                        img(src="uploads/hpage-Banner2.jpg" class="img")
+                        .text
+                            img(class="tit" src="images/hp-tit.png")
+                            a(href="#" class="ui-btn-more")
+                        .des
+                            img(class="des" src="images/hp-des.png")
+                    .item
+                        img(src="uploads/hpage-Banner3.jpg" class="img")
+                        .text
+                            img(class="tit" src="images/hp-tit.png")
+                            a(href="#" class="ui-btn-more")
+                        .des
+                            img(class="des" src="images/hp-des.png")
+            .homeabout.section#homeabout
+                .ui-orn-pic
+                .ui-mode-info
+                    a(href="" class="tit") 企业责任
+                    .des "天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。" </br>—— 王羲之《兰亭集序》
+            .homeduty.section#homeduty
+            .homerefer.section#homerefer
+            .homecontact.section#homecontact
 
 
 
@@ -43,6 +84,7 @@ html(lang='en')
         script(src="scripts/plugs/jquery.min.js")
         script(src="scripts/plugs/bootstrap.min.js")
         script(src="scripts/plugs/jquery.fullPage.min.js")
+        script(src="scripts/plugs/owl.carousel.js")
         script(src="scripts/main.js")
 
 

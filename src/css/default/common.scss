@@ -1,0 +1,28 @@
+/*common*/
+//ui-btn-more
+.ui-btn-more{
+  background:url(../images/hp-more.png) no-repeat center center;
+  width:290px;
+  height:18px;
+  display: block;
+  margin:70px auto;
+}
+//ui-orn-pic
+.ui-orn-pic{
+  width:100%;
+  background: url("../images/hp-ornpic.png") no-repeat center center;
+  height:65px;
+  margin-top: -40px;
+}
+.ui-mode-info{
+  color: #3da8aa;
+  font-weight: 500;
+  font-size:24px;
+  text-align: center;
+  .tit{
+    line-height:50px;
+    color: #3da8aa;
+    border-bottom: 1px solid #3da8aa;
+  }
+
+}

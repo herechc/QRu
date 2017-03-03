@@ -49,6 +49,32 @@ input, textarea, select {
 input, textarea, select {
   *font-size: 100%; }
 
+a {
+  text-decoration: none;
+  outline: medium none; }
+
+li {
+  list-style: none; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  line-height: 24px;
+  color: #323232;
+  -webkit-text-size-adjust: none;
+  height: 100%; }
+
+img {
+  outline: none; }
+
+a:hover {
+  text-decoration: none !important; }
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -64,9 +90,133 @@ input, textarea, select {
 @media (min-width: 768px) {
   .navbar-nav {
     float: right !important; }
+    .navbar-nav li:hover label {
+      display: block; }
     .navbar-nav li a {
       width: 168px;
-      color: #fff;
-      font-size: 18px; } }
+      color: #fff !important;
+      font-size: 18px;
+      text-align: center;
+      padding: 27px 0px !important; }
+      .navbar-nav li a span {
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: -2px;
+        float: right; }
+    .navbar-nav li label {
+      width: 20px;
+      display: none;
+      margin: 2px auto;
+      border-top: 1px solid #fff; }
+    .navbar-nav li.cur label {
+      display: block; }
+
+  .owl-dots {
+    top: 760px; }
+
+  .banners .slide {
+    top: -200px !important; } }
+@media only screen and (max-width: 640px) {
+  .slide {
+    height: 1136px; }
+    .slide .img {
+      height: 1136px; }
+    .slide .des {
+      left: 560px !important;
+      top: 180px !important; }
+    .slide .text {
+      top: 30% !important; } }
+/*common*/
+.ui-btn-more {
+  background: url(../images/hp-more.png) no-repeat center center;
+  width: 290px;
+  height: 18px;
+  display: block;
+  margin: 70px auto; }
+
+.ui-orn-pic {
+  width: 100%;
+  background: url("../images/hp-ornpic.png") no-repeat center center;
+  height: 65px;
+  margin-top: -40px; }
+
+.ui-mode-info {
+  color: #3da8aa;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center; }
+  .ui-mode-info .tit {
+    line-height: 50px;
+    color: #3da8aa;
+    border-bottom: 1px solid #3da8aa; }
+
+/*homepage*/
+.page {
+  height: 100%;
+  width: 100%; }
+
+.navbar-header {
+  height: 79px; }
+
+.navbar-toggle {
+  border: none;
+  margin-top: 9px; }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+  width: 40px;
+  margin-top: 8px; }
+  .navbar-default .navbar-toggle .icon-bar:last-child {
+    width: 20px;
+    float: right; }
+
+.navbar-brand {
+  padding-top: 8px !important; }
+
+.navbar-default {
+  background: #000 !important; }
+
+.logo {
+  float: left; }
+
+.banners {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+  .banners .slide {
+    position: absolute;
+    top: 0px;
+    width: 1920px; }
+    .banners .slide .owl-dots {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -14px; }
+    .banners .slide .item {
+      width: 100%;
+      position: relative; }
+      .banners .slide .item img {
+        display: inline; }
+    .banners .slide .text {
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 100%;
+      text-align: center; }
+      .banners .slide .text img {
+        width: auto; }
+    .banners .slide .des {
+      position: absolute;
+      left: 600px;
+      top: 180px; }
+      .banners .slide .des img {
+        width: auto; }
+
+/*homeabout*/
+.homeabout {
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
