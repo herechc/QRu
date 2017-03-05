@@ -38,47 +38,267 @@
   width:100%;
   overflow: hidden;
   position: relative;
-  height:100%;
-  .slide{
+  .swiper-container{
+    width:100%;
+    height:100%;
+  }
+  .swiper-slide{
+    .img{
+      position: absolute;
+      top:50%;
+      margin-top:-500px;
+    }
+  }
+  .des{
     position: absolute;
-    top: 0px;
-    //left: 50%;
-    //margin-left: -960px;
-    width: 1920px;
-    .owl-dots{
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      margin-left: -14px;
+    left: 50%;
+    margin-left:100px;
+    top: 50px;
+    img{
+      width:auto
     }
-    .item{
-      width:100%;
-      position: relative;
-      img {
-        display: inline;
-      }
-    }
-    .text{
-      position: absolute;
-      top: 40%;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      img{
-        width:auto;
-      }
-    }
-    .des{
-      position: absolute;
-      left: 600px;
-      top: 180px;
-      img{
-        width:auto
-      }
+  }
+  .text{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    img{
+      width:auto;
     }
   }
 }
 /*homeabout*/
 .homeabout{
   width:100%;
+  padding-top:80px;
+  height:100%;
+  overflow: hidden;
+  .mode-intro{
+    width:100%;
+    li{
+      width:50%;
+      float:left;
+      text-align: center;
+      img{
+        max-width:300px;
+        height:auto;
+      }
+    }
+  }
+  .hover{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    .tit{
+      background:url(../images/hp-intro1.png) no-repeat center 10px;
+      font-size: 18px;
+      padding-top:49%;
+    }
+    span{
+      display: block;
+      font-weight: bold;
+      color: #fff;
+    }
+    .des{
+      font-size:14px;
+    }
+  }
+}
+.homeduty{
+  padding-top:80px;
+  overflow: hidden;
+  .hover{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left:0;
+    top:0;
+    align-items: center;
+    color: #fff;
+    background: rgba(93,171,174,0.6);
+  }
+}
+.homerefer{
+  padding-top:80px;
+  overflow: hidden;
+  .mode{
+    position: relative;
+    a{
+      display: block;
+      z-index: 999999;
+    }
+    img{
+      float: left;
+      margin-right: 10px;
+      width:30%;
+      //margin-right:10px;
+    }
+    .infobg{
+      width:100%;
+      height:100%;
+      opacity:0;
+      pointer-events:none;
+      background: #3da8aa;
+      position: absolute;
+      left:0;
+      z-index:0;
+    }
+    .info{
+      .time{
+        color: #9a9a9a;
+        //font-size:24px;
+      }
+      .des{
+        color: #373737;
+        font-weight: bold;
+        //font-size:18px;
+      }
+      .detail{
+        color: #9a9a9a;
+        //font-size:14px;
+      }
+      .line{
+        width:25px;
+        border:1px solid #373737;
+        display: block;
+      }
+    }
+  }
+  .btn-more{
+    width:100px;
+    height:40px;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 40px;
+    color: #3da8aa;
+    font-size:18px;
+    border: 1px solid #3da8aa;
+    margin:0 auto;
+    display: block;
+
+  }
+}
+.homecontact{
+  background: url("../images/hp-contbg.jpg") no-repeat center center;
+  background-repeat: repeat-y;
+
+  padding-top:80px;
+  .map{
+    background: url("../images/hp-map.png") no-repeat;
+    background-size:100% 100% ;
+    width:604px;
+    position: relative;
+    height:499px;
+    .map-btn{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      margin-left: -30px;
+      width:65px;
+      height:65px;
+    }
+  }
+  .erweima{
+    margin-bottom: 10px;
+  }
+  .phone,.addres{
+    color: #808080;
+    font-size:14px;
+    line-height:25px;
+  }
+  .city{
+    color: #3da8aa;
+    font-size:24px;
+    line-height:56px;
+  }
+  .join{
+    width:150px;
+    height:40px;
+    line-height: 40px;
+    display: block;
+    color: #3da8aa;
+    border:1px solid #3da8aa;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .footer{
+    width:100%;
+    background: #404040;
+    color: #fff;
+    position: absolute;
+    height:0;
+    bottom:0;
+    left:0;
+    .row:first-child{
+      margin-top: 20px;
+    }
+    .ferwei{
+      position: absolute;
+      left:0;
+    }
+    .row{
+      a{
+        color: #737373;
+        margin-top: 10px;
+        display: block;
+      }
+    }
+    .message{
+      color: #fff;
+      line-height:60px;
+      margin-top: 20px;
+      background: #3a3a3a;
+    }
+  }
+}
+.screen{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  .screenin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -179px 0 0 -442px;
+    width: 884px;
+    height: 420px;
+    overflow: hidden;
+    .screenBox{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #fff;
+      border:5px solid #000;
+      border-radius: 5px;
+      #map{
+        left: 1%;
+        top:3%;
+        position: absolute;
+      }
+      .boxclose{
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        width: 26px;
+        height: 27px;
+        background: url(../images/bg_close.jpg);
+        cursor: pointer;
+      }
+    }
+  }
 }

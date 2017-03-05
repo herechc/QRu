@@ -3,13 +3,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=640">
+    <!--meta(name="viewport" content="width=640")-->
     <title>QRu</title>
     <link href="css/jquery.fullPage.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.carousel/owl.theme.default.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <script src="scripts/mate.js"></script>
   </head>
   <body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -35,35 +35,197 @@
     </div>
     <div class="page">
       <div class="banners section">
-        <div class="slide owl-carousel owl-theme" id="owl-carousel">
-          <div class="item"><img class="img" src="uploads/hpage-Banner1.jpg">
-            <div class="text"><img class="tit" src="images/hp-tit.png"><a class="ui-btn-more" href="#"></a></div>
-            <div class="des"><img class="des" src="images/hp-des.png"></div>
-          </div>
-          <div class="item"><img class="img" src="uploads/hpage-Banner2.jpg">
-            <div class="text"><img class="tit" src="images/hp-tit.png"><a class="ui-btn-more" href="#"></a></div>
-            <div class="des"><img class="des" src="images/hp-des.png"></div>
-          </div>
-          <div class="item"><img class="img" src="uploads/hpage-Banner3.jpg">
-            <div class="text"><img class="tit" src="images/hp-tit.png"><a class="ui-btn-more" href="#"></a></div>
-            <div class="des"><img class="des" src="images/hp-des.png"></div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img" src="uploads/hpage-Banner1.jpg">
+              <div class="text"><img class="tit" src="images/hp-tit.png"><a class="ui-btn-more" href="#"></a></div>
+              <div class="des"><img class="des" src="images/hp-des.png"></div>
+            </div>
+            <div class="swiper-slide"><img class="img" src="uploads/hpage-Banner2.jpg">
+              <div class="text"><img class="tit" src="images/hp-tit.png"><a class="ui-btn-more" href="#"></a></div>
+              <div class="des"><img class="des" src="images/hp-des.png"></div>
+            </div>
+            <div class="swiper-slide"><img class="img" src="uploads/hpage-Banner3.jpg">
+              <div class="text"><img class="tit" src="images/hp-tit.png"><a class="ui-btn-more" href="#"></a></div>
+              <div class="des"><img class="des" src="images/hp-des.png"></div>
+            </div>
           </div>
         </div>
       </div>
       <div class="homeabout section" id="homeabout">
         <div class="ui-orn-pic"></div>
+        <div class="ui-mode-info"><a class="tit" href="">业务领域</a>
+          <div class="des">"天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。" </br>—— 王羲之《兰亭集序》</div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 col-md-offset-2">
+              <div class="col-pd"><a href=""><img class="img-responsive" src="images/hp-intropic1.png"></a><a class="hover" href=""><span class="tit">清如社</span><span class="des">文化传播与体验</span></a></div>
+            </div>
+            <div class="col-md-3 col-xs-6 col-md-offset-2">
+              <div class="col-pd"><a href=""><img class="img-responsive" src="images/hp-intropic1.png"></a><a class="hover" href=""><span class="tit">清如社</span><span class="des">文化传播与体验</span></a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-xs-6 col-md-offset-2">
+              <div class="col-pd"><a href=""><img class="img-responsive" src="images/hp-intropic1.png"></a><a class="hover" href=""><span class="tit">清如社</span><span class="des">文化传播与体验</span></a></div>
+            </div>
+            <div class="col-md-3 col-xs-6 col-md-offset-2">
+              <div class="col-pd"><a href=""><img class="img-responsive" src="images/hp-intropic1.png"></a><a class="hover" href=""><span class="tit">清如社</span><span class="des">文化传播与体验</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="homeduty section" id="homeduty">
+        <div class="ui-orn-pic"></div>
         <div class="ui-mode-info"><a class="tit" href="">企业责任</a>
           <div class="des">"天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。" </br>—— 王羲之《兰亭集序》</div>
         </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 col-xs-5 col-md-offset-2">
+              <div class="row">
+                <div class="col-md-8 col-xs-10 col-md-offset-1">
+                  <div class="col-pd"><a href=""><img class="img-responsive" src="images/hp-dutyPic2.jpg"></a><a class="hover" href="">复返真如的生态生活体验</a></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-xs-10 col-md-offset-1">
+                  <div class="col-pdnot"><a href=""><img class="img-responsive" src="images/hp-dutyPic2.jpg"></a><a class="hover" href="">复返真如的生态生活体验</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-xs-7">
+              <div class="col-pd"><a herf=""><img class="img-responsive" src="images/hp-dutyPic1.jpg"></a><a class="hover" href="">复返真如的生态生活体验</a></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="homeduty section" id="homeduty"></div>
-      <div class="homerefer section" id="homerefer"></div>
-      <div class="homecontact section" id="homecontact"></div>
+      <div class="homerefer section" id="homerefer">
+        <div class="ui-orn-pic"></div>
+        <div class="ui-mode-info"><a class="tit" href="">咨询报告</a>
+          <div class="des">"天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。" </br>—— 王羲之《兰亭集序》</div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 col-xs-6 col-md-offset-1">
+              <div class="col-pd">
+                <div class="mode">
+                  <div class="infobg"></div><a class="clearfix" href="http:www.baidu.com"><img class="img-responsive" src="images/hp-referPic1.jpg">
+                    <div class="info">
+                      <p class="time">2016年06月</p>
+                      <p class="des">青如旅游：镇远镖局“歪门邪道”路线推介策划报告<span class="line"></span></p>
+                      <p class="detail">为体现“镇远镖局”实体品牌价值，推介游线，将『镇远镖局』特色产品及……</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-xs-6">
+              <div class="col-pd">
+                <div class="mode">
+                  <div class="infobg"></div><a class="clearfix" href="http:www.baidu.com"><img class="img-responsive" src="images/hp-referPic1.jpg">
+                    <div class="info">
+                      <p class="time">2016年06月</p>
+                      <p class="des">青如旅游：镇远镖局“歪门邪道”路线推介策划报告<span class="line"></span></p>
+                      <p class="detail">为体现“镇远镖局”实体品牌价值，推介游线，将『镇远镖局』特色产品及……</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 col-xs-6 col-md-offset-1">
+              <div class="mode">
+                <div class="infobg"></div><a class="clearfix" href="http:www.baidu.com"><img class="img-responsive" src="images/hp-referPic1.jpg">
+                  <div class="info">
+                    <p class="time">2016年06月</p>
+                    <p class="des">青如旅游：镇远镖局“歪门邪道”路线推介策划报告<span class="line"></span></p>
+                    <p class="detail">为体现“镇远镖局”实体品牌价值，推介游线，将『镇远镖局』特色产品及……</p>
+                  </div></a>
+              </div>
+            </div>
+            <div class="col-md-5 col-xs-6">
+              <div class="mode">
+                <div class="infobg"></div><a class="clearfix" href="http:www.baidu.com"><img class="img-responsive" src="images/hp-referPic1.jpg">
+                  <div class="info">
+                    <p class="time">2016年06月</p>
+                    <p class="des">青如旅游：镇远镖局“歪门邪道”路线推介策划报告<span class="line"></span></p>
+                    <p class="detail">为体现“镇远镖局”实体品牌价值，推介游线，将『镇远镖局』特色产品及……</p>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <div class="col-pd"><a class="btn-more" href="">更多</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="homecontact section active" id="homecontact">
+        <div class="ui-orn-pic"></div>
+        <div class="ui-mode-info"><a class="tit" href="">咨询报告</a>
+          <div class="des">"天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。" </br>—— 王羲之《兰亭集序》</div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-xs-8 col-md-offset-2">
+              <div class="map">
+                <div class="map-btn"></div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-4">
+              <div class="col-pd">
+                <div class="erweima"><img src="images/hp-erwei.png"></div>
+                <p class="phone">020-88888888</p>
+                <p class="phone">020-88888888</p>
+                <p class="city">中国·贵阳</p>
+                <p class="addres">贵州青如信息科技有限公司</p>
+                <p class="addres">贵州省贵阳市花果园财富广场2号楼2103室</p><a class="join" href="">加入我们</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2 col-xs-2">领域</div>
+              <div class="col-md-2 col-xs-2">公司</div>
+              <div class="col-md-2 col-xs-2">报告</div>
+              <div class="col-md-2 col-xs-2 col-md-offset-1">联系</div>
+              <div class="col-md-2 col-xs-2 col-md-offset-1"><img class="img-responsive ferwei" src="images/hp-ferwei.png"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-xs-2"><a href="">清如产品</a></div>
+              <div class="col-md-2 col-xs-2"><a href="">了解公司</a></div>
+              <div class="col-md-2 col-xs-2"><a href="">青如旅游：镇远镖局“歪门邪道”路线推介策划报告</a></div>
+              <div class="col-md-2 col-xs-2 col-md-offset-1"><a href="">联系方式</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-xs-2"><a href="">青如社</a></div>
+              <div class="col-md-2 col-xs-2"><a href="">合作伙伴</a></div>
+              <div class="col-md-2 col-xs-2"><a href="">青如旅游：镇远镖局“歪门邪道” 路线推介策划报告</a></div>
+              <div class="col-md-2 col-xs-2 col-md-offset-1"><a href="">加入我们</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-xs-2"><a href="">文化咨询</a></div>
+              <div class="col-md-2 col-xs-2"><a href="">社会责任</a></div>
+              <div class="col-md-2 col-xs-2"><a href="">青如旅游：镇远镖局“歪门邪道”路线推介策划报告</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-xs-2"><a href="">旅游服务</a></div>
+            </div>
+          </div>
+          <div class="message">
+            <div class="container">Copyright© 贵州青如信息科技有限公司. 版权所有. 黔ICP备16009115号-1</div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="scripts/plugs/jquery.min.js"></script>
     <script src="scripts/plugs/bootstrap.min.js"></script>
     <script src="scripts/plugs/jquery.fullPage.min.js"></script>
-    <script src="scripts/plugs/owl.carousel.js"></script>
+    <script src="scripts/plugs/swiper.min.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

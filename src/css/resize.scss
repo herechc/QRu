@@ -1,5 +1,16 @@
 /*resize*/
+@media only screen and (max-width: 1400px) {
+  .ui-mode-info .des{
+    margin-top: 10px!important;
+  }
+}
+@media only screen and (max-width: 976px) {
+  .navbar-nav {
+    display: none;
+  }
+}
 @media (min-width: 768px){
+  //pc
   //nav
   .navbar-nav{
     float: right!important;
@@ -34,28 +45,55 @@
       }
     }
   }
-  .owl-dots{
-    top:760px;
+  .ui-mode-info{
+    top:170px;
   }
-  .banners{
-    .slide{
-      top:-200px!important;
+  .homerefer{
+    .info{
+      .time{
+        font-size: 18px;
+      }
+      .des{
+        font-size:18px;
+      }
+      .detail{
+        font-size:14px;
+      }
     }
   }
 }
-@media only screen and (max-width: 640px){
-  .slide{
-    .img{
-      height:1136px;
+  @media only screen and (max-width: 640px){
+    .ui-mode-info{
+      top:200px;
     }
-    height:1136px;
-    .des{
-      left: 560px!important;
-      top: 180px!important;
+    .homeabout{
+      .container-fluid{
+        margin-top: 30px;
+      }
     }
-    .text{
-      top:30%!important;
+    .homerefer{
+      .mode{
+        p{
+          line-height:15px;
+        }
+        img{
+          width:40%!important;
+        }
+      }
     }
-  }
+    .map{
+      width:400px!important;
+    }
+    .screen{
+      .screenin{
+        width: 600px!important;
+        margin-left: 0px!important;
+        left: 20px!important;
+        #map{
+          width:580px;
 
-}
+        }
+      }
+    }
+
+  }

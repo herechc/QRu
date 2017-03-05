@@ -3,13 +3,13 @@ html(lang='en')
     head
         meta(http-equiv="Content-Type" content="text/html; charset=utf-8" )
         meta(name="renderer" content="webkit")
-        meta(name="viewport" content="width=640")
+        //meta(name="viewport" content="width=640")
         title QRu
         link(href="css/jquery.fullPage.css",rel="stylesheet")
-        link(rel="stylesheet" href="css/owl.carousel/owl.carousel.css")
-        link(rel="stylesheet" href="css/owl.carousel/owl.theme.default.css")
+        link(rel="stylesheet" href="css/swiper.min.css")
         link(href="css/bootstrap/bootstrap.min.css",rel="stylesheet")
         link(href="css/main.css",rel="stylesheet")
+        script(src="scripts/mate.js")
     body
         .navbar.navbar-default.navbar-fixed-top
             .container
@@ -45,38 +45,205 @@ html(lang='en')
                                 label
         .page
             .banners.section
-                .slide#owl-carousel.owl-carousel.owl-theme
-                    .item
-                        img(src="uploads/hpage-Banner1.jpg" class="img")
-                        .text
-                            img(class="tit" src="images/hp-tit.png")
-                            a(href="#" class="ui-btn-more")
-                        .des
-                            img(class="des" src="images/hp-des.png")
-
-                    .item
-                        img(src="uploads/hpage-Banner2.jpg" class="img")
-                        .text
-                            img(class="tit" src="images/hp-tit.png")
-                            a(href="#" class="ui-btn-more")
-                        .des
-                            img(class="des" src="images/hp-des.png")
-                    .item
-                        img(src="uploads/hpage-Banner3.jpg" class="img")
-                        .text
-                            img(class="tit" src="images/hp-tit.png")
-                            a(href="#" class="ui-btn-more")
-                        .des
-                            img(class="des" src="images/hp-des.png")
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="uploads/hpage-Banner1.jpg" class="img")
+                            .text
+                                img(class="tit" src="images/hp-tit.png")
+                                a(href="#" class="ui-btn-more")
+                            .des
+                                img(class="des" src="images/hp-des.png")
+                        .swiper-slide
+                            img(src="uploads/hpage-Banner2.jpg" class="img")
+                            .text
+                                img(class="tit" src="images/hp-tit.png")
+                                a(href="#" class="ui-btn-more")
+                            .des
+                                img(class="des" src="images/hp-des.png")
+                        .swiper-slide
+                            img(src="uploads/hpage-Banner3.jpg" class="img")
+                            .text
+                                img(class="tit" src="images/hp-tit.png")
+                                a(href="#" class="ui-btn-more")
+                            .des
+                                img(class="des" src="images/hp-des.png")
             .homeabout.section#homeabout
+                    .ui-orn-pic
+                    .ui-mode-info
+                        a(href="" class="tit") 业务领域
+                        .des "天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。" </br>—— 王羲之《兰亭集序》
+                    .container-fluid
+                        .row
+                            .col-md-3.col-xs-6.col-md-offset-2
+                                .col-pd
+                                    a(href="")
+                                        img(src="images/hp-intropic1.png" class="img-responsive")
+                                    a(href="" class="hover")
+                                        span.tit 清如社
+                                        span.des 文化传播与体验
+                            .col-md-3.col-xs-6.col-md-offset-2
+                                .col-pd
+                                    a(href="")
+                                        img(src="images/hp-intropic1.png" class="img-responsive")
+                                    a(href="" class="hover")
+                                        span.tit 清如社
+                                        span.des 文化传播与体验
+                        .row
+                            .col-md-3.col-xs-6.col-md-offset-2
+                                .col-pd
+                                    a(href="")
+                                        img(src="images/hp-intropic1.png" class="img-responsive")
+                                    a(href="" class="hover")
+                                        span.tit 清如社
+                                        span.des 文化传播与体验
+                            .col-md-3.col-xs-6.col-md-offset-2
+                                .col-pd
+                                    a(href="")
+                                        img(src="images/hp-intropic1.png" class="img-responsive")
+                                    a(href="" class="hover")
+                                        span.tit 清如社
+                                        span.des 文化传播与体验
+
+            .homeduty.section#homeduty
                 .ui-orn-pic
                 .ui-mode-info
                     a(href="" class="tit") 企业责任
                     .des "天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。" </br>—— 王羲之《兰亭集序》
-            .homeduty.section#homeduty
-            .homerefer.section#homerefer
-            .homecontact.section#homecontact
+                .container-fluid
+                    .row
+                        .col-md-3.col-xs-5.col-md-offset-2
+                            .row
+                                .col-md-8.col-xs-10.col-md-offset-1
+                                    .col-pd
+                                        a(href="" class="")
+                                            img(src="images/hp-dutyPic2.jpg" class="img-responsive")
+                                        a(href="" class="hover") 复返真如的生态生活体验
+                            .row
+                                .col-md-8.col-xs-10.col-md-offset-1
+                                    .col-pdnot
+                                        a(href="" class="")
+                                            img(src="images/hp-dutyPic2.jpg" class="img-responsive")
+                                        a(href="" class="hover") 复返真如的生态生活体验
 
+                        .col-md-5.col-xs-7
+                            .col-pd
+                                a(herf="")
+                                    img(src="images/hp-dutyPic1.jpg" class="img-responsive")
+                                a(href="" class="hover") 复返真如的生态生活体验
+            .homerefer.section#homerefer
+                .ui-orn-pic
+                .ui-mode-info
+                    a(href="" class="tit") 咨询报告
+                    .des "天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。" </br>—— 王羲之《兰亭集序》
+                .container-fluid
+                    .row
+                        .col-md-5.col-xs-6.col-md-offset-1
+                            .col-pd
+                                .mode
+                                    .infobg
+                                    a(href="http:www.baidu.com" class="clearfix")
+                                        img(src="images/hp-referPic1.jpg" class="img-responsive")
+                                        .info
+                                            p.time 2016年06月
+                                            p.des 青如旅游：镇远镖局“歪门邪道”路线推介策划报告
+                                                span.line
+                                            p.detail 为体现“镇远镖局”实体品牌价值，推介游线，将『镇远镖局』特色产品及……
+                        .col-md-5.col-xs-6
+                            .col-pd
+                                .mode
+                                    .infobg
+                                    a(href="http:www.baidu.com" class="clearfix")
+                                        img(src="images/hp-referPic1.jpg" class="img-responsive")
+                                        .info
+                                            p.time 2016年06月
+                                            p.des 青如旅游：镇远镖局“歪门邪道”路线推介策划报告
+                                                span.line
+                                            p.detail 为体现“镇远镖局”实体品牌价值，推介游线，将『镇远镖局』特色产品及……
+                    .row
+                        .col-md-5.col-xs-6.col-md-offset-1
+                            .mode
+                                .infobg
+                                a(href="http:www.baidu.com" class="clearfix")
+                                    img(src="images/hp-referPic1.jpg" class="img-responsive")
+                                    .info
+                                        p.time 2016年06月
+                                        p.des 青如旅游：镇远镖局“歪门邪道”路线推介策划报告
+                                            span.line
+                                        p.detail 为体现“镇远镖局”实体品牌价值，推介游线，将『镇远镖局』特色产品及……
+                        .col-md-5.col-xs-6
+                            .mode
+                                .infobg
+                                a(href="http:www.baidu.com" class="clearfix")
+                                    img(src="images/hp-referPic1.jpg" class="img-responsive")
+                                    .info
+                                        p.time 2016年06月
+                                        p.des 青如旅游：镇远镖局“歪门邪道”路线推介策划报告
+                                            span.line
+                                        p.detail 为体现“镇远镖局”实体品牌价值，推介游线，将『镇远镖局』特色产品及……
+                    .row
+                        .col-md-12.col-xs-12
+                            .col-pd
+                                a(class="btn-more" href="") 更多
+            .homecontact.section#homecontact.active
+                .ui-orn-pic
+                .ui-mode-info
+                    a(href="" class="tit") 咨询报告
+                    .des "天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。" </br>—— 王羲之《兰亭集序》
+                .container-fluid
+                    .row
+                        .col-md-6.col-xs-8.col-md-offset-2
+                            .map
+                                .map-btn
+                        .col-md-3.col-xs-4
+                            .col-pd
+                                .erweima
+                                    img(src="images/hp-erwei.png")
+                                p.phone 020-88888888
+                                p.phone 020-88888888
+                                p.city 中国·贵阳
+                                p.addres 贵州青如信息科技有限公司
+                                p.addres 贵州省贵阳市花果园财富广场2号楼2103室
+                                a(href="" class="join") 加入我们
+                .footer
+                    .container
+                        .row
+                            .col-md-2.col-xs-2 领域
+                            .col-md-2.col-xs-2 公司
+                            .col-md-2.col-xs-2 报告
+                            .col-md-2.col-xs-2.col-md-offset-1 联系
+                            .col-md-2.col-xs-2.col-md-offset-1
+                                img(src="images/hp-ferwei.png" class="img-responsive ferwei")
+                        .row
+                            .col-md-2.col-xs-2
+                                a(href="") 清如产品
+                            .col-md-2.col-xs-2
+                                a(href="") 了解公司
+                            .col-md-2.col-xs-2
+                                a(href="") 青如旅游：镇远镖局“歪门邪道”路线推介策划报告
+                            .col-md-2.col-xs-2.col-md-offset-1
+                                a(href="") 联系方式
+                        .row
+                            .col-md-2.col-xs-2
+                                a(href="") 青如社
+                            .col-md-2.col-xs-2
+                                a(href="") 合作伙伴
+                            .col-md-2.col-xs-2
+                                a(href="") 青如旅游：镇远镖局“歪门邪道” 路线推介策划报告
+                            .col-md-2.col-xs-2.col-md-offset-1
+                                a(href="") 加入我们
+                        .row
+                            .col-md-2.col-xs-2
+                                a(href="") 文化咨询
+                            .col-md-2.col-xs-2
+                                a(href="") 社会责任
+                            .col-md-2.col-xs-2
+                                a(href="") 青如旅游：镇远镖局“歪门邪道”路线推介策划报告
+                        .row
+                            .col-md-2.col-xs-2
+                                a(href="") 旅游服务
+                    .message
+                        .container Copyright© 贵州青如信息科技有限公司. 版权所有. 黔ICP备16009115号-1
 
 
 
@@ -84,7 +251,7 @@ html(lang='en')
         script(src="scripts/plugs/jquery.min.js")
         script(src="scripts/plugs/bootstrap.min.js")
         script(src="scripts/plugs/jquery.fullPage.min.js")
-        script(src="scripts/plugs/owl.carousel.js")
+        script(src="scripts/plugs/swiper.min.js")
         script(src="scripts/main.js")
 
 
