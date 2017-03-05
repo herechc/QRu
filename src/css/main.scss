@@ -7,8 +7,19 @@
   width:100%;
 }
 .navbar-header{
-  height:79px
+  height:79px;
 }
+.navbar{
+  -webkit-transform:translate3d(0,-79px,0);
+  //-webkit-transition:-webkit-transform  .5s linear 1s;
+}
+.navbar.active{
+  -webkit-transform:translate3d(0,0px,0);
+}
+.navbar-default.navaddcolor{
+  background: #3da8aa;
+}
+
 .navbar-toggle{
   border: none;
   margin-top:9px;
@@ -29,7 +40,7 @@
   padding-top: 8px!important;
 }
 .navbar-default{
-  background: #000!important;
+  background: rgba(255,255,255,0.5);
 }
 .logo{
   float: left;
@@ -202,6 +213,7 @@
       position: absolute;
       top:50%;
       left: 50%;
+      cursor:pointer;
       margin-left: -30px;
       width:65px;
       height:65px;

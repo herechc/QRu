@@ -7,10 +7,24 @@ $(function () {
     // });
     $(".page").fullpage({
         freeDrag:true,
-        verticalCentered: false
+        verticalCentered: false,
+        afterLoad:function(anchorLink, index){
+            switch (index){
+                case 1:
+                    $('.navbar').addClass("active");
+                    $(".navbar-default").removeClass("navaddcolor")
+                    break;
+                default:
+                    $('.navbar').addClass("active ");
+                    $(".navbar-default").addClass("navaddcolor")
+            }
+        },
+        onLeave:function(index){
+            $('.navbar').removeClass("active");
+        }
     })
     var mySwiper = new Swiper ('.swiper-container', {
-
+        pagination : '.swiper-pagination',
     })
     $('.col-pd a').hover(function() {
         $(this).children('.hover').stop().animate({'height': '78px'});
