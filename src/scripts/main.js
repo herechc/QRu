@@ -12,6 +12,7 @@ $(function () {
             switch (index){
                 case 1:
                     $('.navbar').stop().animate({"top":"-80px"},function(){
+                        $(".logo").attr("src","images/logo1.png")
                         $('.navbar').stop().animate({"top":"0px"})
                         $(".navbar-default").addClass("navaddcolor")
                     })
@@ -19,6 +20,7 @@ $(function () {
             }
             if(nextIndex==1){
                 $('.navbar').stop().animate({"top":"-80px"},function(){
+                    $(".logo").attr("src","images/logo.png")
                     $('.navbar').stop().animate({"top":"0px"})
                     $(".navbar-default").removeClass("navaddcolor")
                 })
