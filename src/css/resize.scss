@@ -3,6 +3,9 @@
   .col-mrg{
     margin-top:22px!important;
   }
+  .refer-btn-more{
+    margin-top: 30px!important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1400px){
   .duty-left{
@@ -10,6 +13,11 @@
   }
   .duty-right{
     width:400px!important;
+  }
+  .homeabout{
+    .col-pd{
+      width:280px;
+    }
   }
 }
 @media only screen and (max-width: 976px) {

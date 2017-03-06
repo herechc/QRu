@@ -10,8 +10,8 @@
   height:79px;
 }
 .navbar{
-  -webkit-transform:translate3d(0,-79px,0);
-  //-webkit-transition:-webkit-transform  .5s linear 1s;
+  //-webkit-transform:translate3d(0,-79px,0);
+  //-webkit-transition:-webkit-transform  .5s linear ;
 }
 .navbar.active{
   -webkit-transform:translate3d(0,0px,0);

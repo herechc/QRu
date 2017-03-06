@@ -90,13 +90,19 @@ a:hover {
 /*resize*/
 @media only screen and (min-width: 1400px) {
   .col-mrg {
-    margin-top: 22px !important; } }
+    margin-top: 22px !important; }
+
+  .refer-btn-more {
+    margin-top: 30px !important; } }
 @media screen and (min-width: 768px) and (max-width: 1400px) {
   .duty-left {
     width: 212px !important; }
 
   .duty-right {
-    width: 400px !important; } }
+    width: 400px !important; }
+
+  .homeabout .col-pd {
+    width: 280px; } }
 @media only screen and (max-width: 976px) {
   .navbar-nav span {
     display: none; } }
@@ -225,9 +231,6 @@ a:hover {
 
 .navbar-header {
   height: 79px; }
-
-.navbar {
-  -webkit-transform: translate3d(0, -79px, 0); }
 
 .navbar.active {
   -webkit-transform: translate3d(0, 0px, 0); }

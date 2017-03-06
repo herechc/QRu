@@ -8,19 +8,21 @@ $(function () {
     $(".page").fullpage({
         freeDrag:true,
         verticalCentered: false,
-        afterLoad:function(anchorLink, index){
+        onLeave:function(index,nextIndex){
             switch (index){
                 case 1:
-                    $('.navbar').addClass("active");
-                    $(".navbar-default").removeClass("navaddcolor")
+                    $('.navbar').stop().animate({"top":"-80px"},function(){
+                        $('.navbar').stop().animate({"top":"0px"})
+                        $(".navbar-default").addClass("navaddcolor")
+                    })
                     break;
-                default:
-                    $('.navbar').addClass("active ");
-                    $(".navbar-default").addClass("navaddcolor")
             }
-        },
-        onLeave:function(index){
-            $('.navbar').removeClass("active");
+            if(nextIndex==1){
+                $('.navbar').stop().animate({"top":"-80px"},function(){
+                    $('.navbar').stop().animate({"top":"0px"})
+                    $(".navbar-default").removeClass("navaddcolor")
+                })
+            }
         }
     })
     var mySwiper = new Swiper ('.swiper-container', {
