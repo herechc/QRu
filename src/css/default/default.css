@@ -51,7 +51,8 @@ input, textarea, select {
 
 a {
   text-decoration: none;
-  outline: medium none; }
+  outline: medium none;
+  padding: 0px; }
 
 li {
   list-style: none; }

@@ -26,25 +26,24 @@ $(function () {
     var mySwiper = new Swiper ('.swiper-container', {
         pagination : '.swiper-pagination',
     })
-    $('.col-pd a').hover(function() {
-        $(this).children('.hover').stop().animate({'height': '78px'});
-        $(this).find('.tit').stop().animate({'paddingTop': '8px', 'backgroundPositionY': '-120px'});
+    $('.col-pd a.hover').hover(function() {
+        $(this).stop().animate({'height': '68px'});
+        $(this).find('.tit').stop().animate({'paddingTop': '10px', 'backgroundPositionY': '-120px'});
 
     },function(){
-        $(this).children('.hover').stop().animate({'height': '100%'});
+        $(this).stop().animate({'height': '100%'});
         $(this).find('.tit').stop().animate({'paddingTop': '49%', 'backgroundPositionY': '10px'});
-
     });
     $(".homeduty .hover").hover(function(){
-        $(this).stop().animate({"height":"40px"})
+        $(this).stop().animate({"height":"60px"})
     },function(){
         $(this).stop().animate({"height":"100%"})
     })
 
     $(".homerefer .mode").hover(function(){
-        $(this).find(".infobg").stop().animate({"opacity":"0.4"})
+        $(this).find(".infobg").stop().animate({"width":"100%"})
     },function(){
-        $(this).find(".infobg").stop().animate({"opacity":"0"})
+        $(this).find(".infobg").stop().animate({"width":"0"})
     })
 
     $('.homecontact .map-btn').click(function() {

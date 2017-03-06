@@ -105,8 +105,8 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
     text-align: center;
+    background: rgba(0,0,0,0.5);
     .tit{
       background:url(../images/hp-intro1.png) no-repeat center 10px;
       font-size: 18px;
@@ -132,6 +132,7 @@
     justify-content: center;
     position: absolute;
     left:0;
+    font-size:16px;
     top:0;
     align-items: center;
     color: #fff;
@@ -143,38 +144,55 @@
   overflow: hidden;
   .mode{
     position: relative;
+    &:hover{
+      background: rgb(61,168,170);
+      .des,.detail{
+        color: #fff!important;
+      }
+      .line{
+        border:1px solid #fff!important;
+      }
+    }
     a{
       display: block;
       z-index: 999999;
     }
     img{
       float: left;
-      margin-right: 10px;
+      //margin-right: 10px;
       width:30%;
       //margin-right:10px;
     }
     .infobg{
-      width:100%;
-      height:100%;
-      opacity:0;
-      pointer-events:none;
-      background: #3da8aa;
-      position: absolute;
-      left:0;
-      z-index:0;
+      //width:100%;
+      //height:100%;
+      //opacity:0.5;
+      //pointer-events:none;
+      //background: #3da8aa;
+      //position: absolute;
+      //left:0;
+      //z-index:0;
     }
     .info{
+      width:67%;
+      float: left;
+      padding-left: 10px;
+      overflow: hidden;
       .time{
-        color: #9a9a9a;
+        color: #cccccc;
+        margin-top: 7px;
         //font-size:24px;
       }
       .des{
         color: #373737;
         font-weight: bold;
+        margin-top: 6px;
+        display: block;
         //font-size:18px;
       }
       .detail{
         color: #9a9a9a;
+        margin-top: 10px;
         //font-size:14px;
       }
       .line{
