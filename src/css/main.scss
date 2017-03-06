@@ -9,13 +9,6 @@
 .navbar-header{
   height:79px;
 }
-.navbar{
-  //-webkit-transform:translate3d(0,-79px,0);
-  //-webkit-transition:-webkit-transform  .5s linear ;
-}
-.navbar.active{
-  -webkit-transform:translate3d(0,0px,0);
-}
 .navbar-default.navaddcolor{
   background: #3da8aa;
 }
@@ -86,6 +79,12 @@
   padding-top:80px;
   height:100%;
   overflow: hidden;
+  .mode-about{
+    margin-top: 25px;
+    .mode-about-list{
+      position: relative;
+    }
+  }
   .mode-intro{
     width:100%;
     li{
@@ -107,10 +106,15 @@
     height: 100%;
     text-align: center;
     background: rgba(0,0,0,0.5);
+    img{
+      width:118px;
+      height:118px;
+      margin: 70px auto 0;
+    }
     .tit{
-      background:url(../images/hp-intro1.png) no-repeat center 10px;
+      //background:url(../images/hp-intro1.png) no-repeat center 10px;
       font-size: 18px;
-      padding-top:49%;
+      padding-top:18px;
     }
     span{
       display: block;
@@ -119,6 +123,7 @@
     }
     .des{
       font-size:14px;
+      padding-top: 8px;
     }
   }
 }

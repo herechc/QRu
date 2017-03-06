@@ -1,4 +1,11 @@
 $(function () {
+    var scaleW=window.innerWidth / 1920;
+    var scaleH=window.innerHeight / 1080;
+
+    // var scaleW=window.innerWidth / 750;
+    // var scaleH=window.innerHeight / 1016;
+
+    $(".container").css("webkitTransform","scale("+scaleW+","+scaleH+")")
     // $('#owl-carousel').owlCarousel({
     //     autoplay:false,
     //     dots: true,
@@ -30,14 +37,15 @@ $(function () {
     var mySwiper = new Swiper ('.swiper-container', {
         pagination : '.swiper-pagination',
     })
-    $('.col-pd a.hover').hover(function() {
-        $(this).stop().animate({'height': '68px'});
-        $(this).find('.tit').stop().animate({'paddingTop': '10px', 'backgroundPositionY': '-120px'});
 
+    $('.mode-about-list').hover(function() {
+        $(this).find('.hover').stop().animate({'height': '90px'});
+        $(this).find(".inner-img").stop().animate({"width":"0px","height":"0px","margin-top":"0px"})
     },function(){
-        $(this).stop().animate({'height': '100%'});
-        $(this).find('.tit').stop().animate({'paddingTop': '49%', 'backgroundPositionY': '10px'});
+        $(this).find('.hover').stop().animate({'height': '100%'});
+        $(this).find(".inner-img").stop().animate({"width":"118px","height":"118px","margin":"70px auto 0"})
     });
+
     $(".homeduty .hover").hover(function(){
         $(this).stop().animate({"height":"60px"})
     },function(){
