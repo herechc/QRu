@@ -6,6 +6,7 @@ $(function () {
     // var scaleH=window.innerHeight / 1016;
 
     $(".container").css("webkitTransform","scale("+scaleW+","+scaleH+")")
+
     // $('#owl-carousel').owlCarousel({
     //     autoplay:false,
     //     dots: true,
