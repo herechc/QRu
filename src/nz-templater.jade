@@ -6,53 +6,26 @@ html(lang='en')
         include include/g-style.jade
         link(rel="stylesheet",href="css/main.css")
     body
-        #menu.navbar.navbar-default.navbar-fixed-top(role="navigation")
-            .container
-                .navbar-header
-                    button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1")
-                        span.sr-only
-                        span.icon-bar
-                        span.icon-bar
-                        span.icon-bar
-                    a(class="navbar-brand" href="index.html")
-                        img(src="images/logo1.png" class="logo")
-                .collapse.navbar-collapse#navbar-collapse-1
-                    ul.nav.navbar-nav
-                        li(data-menuanchor="page")
-                            a(href="") 首页
-                                span |
-                                label
-                        li(data-menuanchor="gallery")
-                            a(href="") 业务领域
-                                span |
-                                label
-                        li(data-menuanchor="Gallery")
-                            a(href="") 企业责任
-                                span |
-                                label
-                        li(data-menuanchor="aboutus")
-                            a(href="") 咨询报告
-                                span |
-                                label
-                        li(data-menuanchor="contact")
-                            a(href="") 联系我们
-                                span |
-                                label
+        include include/nav.jade
         .page
             .section#section0
                 .container
-
+                    - for(var i=0;i<2;i++)
+                        .row
+                            - for(var j=0;j<2;j++)
+                                .col-md-6.col-sm-6.col-xs-6(class=j == 0 ? "text-right" : "")
+                                    a.thumbnail(href="#")
+                                        img.img-thumbnail(src="http://www.runoob.com/wp-content/uplo" +
+                                        "ads/2014/06/kittens.jpg",alt="")
             .section#section1
                 .container
                     h2 2
             .section#section3
                 .container
                     h1 3
-
             .section#section4
                 .container
                     h1 4
-
             .section#section5
                 .container
                     h1 5
