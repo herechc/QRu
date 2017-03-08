@@ -1,20 +1,19 @@
 doctype html
 html(lang='en')
     head
-        include include/g-meta.jade
-        title QRu
-        include include/g-style.jade
-        link(rel="stylesheet",href="css/main.css")
+        meta(name="viewport",content="width=device-width, initial-scale=1")
+        title
+        link(href="css/common/jquery.fullPage.css",rel="stylesheet")
+        link(href="css/common/bootstrap/bootstrap.min.css",rel="stylesheet")
     body
-        include include/nav.jade
-        .page
-            .section 1
-            .section 2
-        include include/g-script.jade
+        p 123
+        script(src="scripts/plugs/jquery.min.js")
+        script(src="scripts/plugs/bootstrap.min.js")
+        script(src="scripts/plugs/jquery.fullPage.min.js")
         script.
             $(function () {
                 $(".page").fullpage({
-                    verticalCentered: false
+                    verticalCentered: true
                 });
             });
 
