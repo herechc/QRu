@@ -30,6 +30,17 @@
     margin-top:9px;
   }
 }
+@media only screen and (max-width: 1200px){
+  .navbar-nav {
+    display: none;
+  }
+  .navbar-toggle{
+    display: block;
+  }
+  .navbar-header{
+    float: none;
+  }
+}
 @media (min-width: 768px){
   .navbar-nav{
     float: right!important;
@@ -40,11 +51,11 @@
         }
       }
       a{
-        //width:168px;
-        color: #fff!important;
+        width: 168px;
         font-size: 18px;
         text-align: center;
-        padding:27px 0px!important;
+        color: rgb(255, 255, 255);
+        padding: 27px 0px !important;
         span{
           color:rgba(255,255,255,0.5);
           margin-top: -2px;
