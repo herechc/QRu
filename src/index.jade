@@ -1,23 +1,68 @@
-include include/templater.jade
-.page
-    .section#section0
-        .container
+doctype html
+html(lang='en')
+    head
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8" )
+        meta(name="renderer" content="webkit")
+        title QRu
+        link(href="css/common/jquery.fullPage.css",rel="stylesheet")
+        link(href="css/common/bootstrap/bootstrap.min.css",rel="stylesheet")
+        script(src="scripts/plugs/mate.js")
+        script(src="scripts/plugs/jquery.min.js")
+        script(src="scripts/plugs/bootstrap.min.js")
+        script(src="scripts/plugs/jquery.fullPage.min.js")
+        link(rel="stylesheet",href="css/main.css")
+    body
+        #menu.navbar.navbar-default.navbar-fixed-top(role="navigation")
+            .container
+                .navbar-header
+                    button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1")
+                        span.sr-only
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a(class="navbar-brand" href="index.html")
+                        img(src="images/logo1.png" class="logo")
+                .collapse.navbar-collapse#navbar-collapse-1
+                    ul.nav.navbar-nav
+                        li(data-menuanchor="page")
+                            a(href="") 首页
+                                span |
+                                label
+                        li(data-menuanchor="gallery")
+                            a(href="") 业务领域
+                                span |
+                                label
+                        li(data-menuanchor="Gallery")
+                            a(href="") 企业责任
+                                span |
+                                label
+                        li(data-menuanchor="aboutus")
+                            a(href="") 咨询报告
+                                span |
+                                label
+                        li(data-menuanchor="contact")
+                            a(href="") 联系我们
+                                span |
+                                label
+        .page
+            .section#section0
+                .container
 
-    .section#section1
-        .container
-            h2 2
-    .section#section3
-        .container
-            h1 3
+            .section#section1
+                .container
+                    h2 2
+            .section#section3
+                .container
+                    h1 3
 
-    .section#section4
-        .container
-            h1 4
+            .section#section4
+                .container
+                    h1 4
 
-    .section#section5
-        .container
-            h1 5
-
+            .section#section5
+                .container
+                    h1 5
+        script(src="scripts/main.js")
 
 
 
