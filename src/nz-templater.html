@@ -1,5 +1,28 @@
-<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"><title></title><link href="css/common/jquery.fullPage.css" rel="stylesheet"><link href="css/common/bootstrap/bootstrap.min.css" rel="stylesheet"></head><body><p>123</p><script src="scripts/plugs/jquery.min.js"></script><script src="scripts/plugs/bootstrap.min.js"></script><script src="scripts/plugs/jquery.fullPage.min.js"></script><script>$(function () {
-    $(".page").fullpage({
-        verticalCentered: true
-    });
-});</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.fullPage.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section">1</div>
+      <div class="seciton">2</div>
+      <div class="section">3</div>
+    </div>
+    <script src="scripts/plugs/jquery.min.js"></script>
+    <script src="scripts/plugs/bootstrap.min.js"></script>
+    <script src="scripts/plugs/jquery.fullPage.min.js"></script>
+    <script>
+      $(function () {
+          $("#fullpage").fullpage({
+              verticalCentered: true
+          });
+      });
+    </script>
+  </body>
+</html>

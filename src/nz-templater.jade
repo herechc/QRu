@@ -1,18 +1,23 @@
 doctype html
 html(lang='en')
     head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
         meta(name="viewport",content="width=device-width, initial-scale=1")
         title
-        link(href="css/common/jquery.fullPage.css",rel="stylesheet")
-        link(href="css/common/bootstrap/bootstrap.min.css",rel="stylesheet")
+        link(href="css/bootstrap.min.css",rel="stylesheet")
+        link(href="css/jquery.fullPage.min.css",rel="stylesheet")
     body
-        p 123
+        #fullpage
+            .section 1
+            .seciton 2
+            .section 3
         script(src="scripts/plugs/jquery.min.js")
         script(src="scripts/plugs/bootstrap.min.js")
         script(src="scripts/plugs/jquery.fullPage.min.js")
         script.
             $(function () {
-                $(".page").fullpage({
+                $("#fullpage").fullpage({
                     verticalCentered: true
                 });
             });
