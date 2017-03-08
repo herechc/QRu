@@ -5,21 +5,80 @@ html(lang='en')
         meta(http-equiv="X-UA-Compatible",content="IE=edge")
         meta(name="viewport",content="width=device-width, initial-scale=1")
         title
-        link(href="css/bootstrap.min.css",rel="stylesheet")
-        link(href="css/jquery.fullPage.min.css",rel="stylesheet")
+        link(href="css/bootstrap.min.css",rel="stylesheet",type="text/css")
+        link(href="css/jquery.fullPage.min.css",rel="stylesheet",type="text/css")
+        link(href="css/nz-templater.css",rel="stylesheet",type="text/css")
     body
+        nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+            .container-fluid
+                .navbar-header
+                    button.navbar-toggle(type="button",data-toggle="collapse",data-target="#example-navbar-collapse")
+                        span.sr-only
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href="#") logo
+                #example-navbar-collapse.collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li.active
+                            a(href="#") title
+                        li
+                            a(href="#") title
         #fullpage
-            .section 1
-            .section 2
-        script(src="scripts/plugs/jquery.min.js")
-        script(src="scripts/plugs/bootstrap.min.js")
-        script(src="scripts/plugs/jquery.fullPage.min.js")
-        script.
-            $(function () {
-                $("#fullpage").fullpage({
-
-                });
-            });
+            .section.activebg.section1
+                .row
+                    .col-md-12.text-center.m-hd
+                        h3 业务领域
+                        p "天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。"
+                        p —— 王羲之《兰亭集序》
+                .row
+                    .col-md-6.col-sm-6.col-xs-6
+                        a.thumbnail.pull-right(href="#")
+                            img.img-thumbnail(src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg",alt="")
+                    .col-md-6.col-sm-6.col-xs-6
+                        a.thumbnail.pull-left(href="#")
+                            img.img-thumbnail(src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg",alt="")
+                .row
+                    .col-md-6.col-sm-6.col-xs-6
+                        a.thumbnail.pull-right(href="#")
+                            img.img-thumbnail(src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg",alt="")
+                    .col-md-6.col-sm-6.col-xs-6
+                        a.thumbnail.pull-left(href="#")
+                            img.img-thumbnail(src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg",alt="")
+            .section.activebg.section2
+                .row
+                    .col-md-12.text-center.m-hd
+                        h3 企业责任
+                        p "天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。"
+                        p —— 王羲之《兰亭集序》
+                .row
+                    .col-xs-6
+                        .row
+                            .col-md-12
+                                a.thumbnail.pull-right(href="#")
+                                    img.img-thumbnail(src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg",alt="")
+                        .row
+                            .col-md-12
+                                a.thumbnail.pull-right(href="#")
+                                    img.img-thumbnail(src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg",alt="")
+                    .col-xs-6
+                        a.thumbnail.pull-left(href="#")
+                            img.img-thumbnail(src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg",alt="")
+            .section.activebg.section3
+                .row
+                    .col-md-12.text-center.m-hd
+                        h3 咨询报告
+                        p "天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。"
+                        p —— 王羲之《兰亭集序》
+            .section.activebg.section4
+                .row
+                    .col-md-12.text-center.m-hd
+                        h3 联系我们
+                        p "天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目畅怀，足以极视听之娱。"
+    script(src="scripts/jquery.min.js")
+        script(src="scripts/bootstrap.min.js")
+        script(src="scripts/jquery.fullPage.min.js")
+        script(src="scripts/nz-templater.js")
 
 
 
