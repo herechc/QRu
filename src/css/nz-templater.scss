@@ -1,3 +1,5 @@
+@import "common/ui";
+
 .activebg {
   position: relative;
   width: 100%;
@@ -23,9 +25,7 @@
   background-position: 50% 50px;
   background-size: 50%;
   &.section1 {
-    .thumbnail {
-      margin-bottom: 0;
-      border-width: 0;
+    .thumb {
     }
   }
   &.section2 {
@@ -35,3 +35,4 @@
     }
   }
 }
+
