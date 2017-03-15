@@ -1,4 +1,5 @@
-@import "common/ui";
+@import "common/ui-thumbmask";
+@import "common/m-hd";
 
 .activebg {
   position: relative;
@@ -11,27 +12,31 @@
   background-size: cover;
 }
 
-.m-hd {
-  h3 {
-    font-size: 24px;
-    color: #3da8aa;
-    border-bottom: solid #3da8aa 1px;
-    display: inline-block;
-  }
-}
-
 .section {
   background-image: url("../images/nz-section-hd.png");
   background-position: 50% 50px;
   background-size: 50%;
+  .m-hd {
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
   &.section1 {
-    .thumb {
-    }
+
   }
   &.section2 {
-    .thumbnail {
-      margin-bottom: 0;
+    .ui-thumbmask {
+      margin: 20px;
       border-width: 0;
+    }
+    @media(max-width: 1000px) {
+      .ui-thumbmask {
+        margin: 10px;
+      }
+    }
+    @media(max-width: 800px) {
+    }
+    @media(max-width: 640px) {
     }
   }
 }
