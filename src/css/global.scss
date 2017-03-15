@@ -22,9 +22,9 @@
     margin-left: 10px;
   }
   &.section1 {
-
   }
   &.section2 {
+    display: none;
     .ui-thumbmask {
       margin: 20px;
       border-width: 0;
@@ -37,6 +37,15 @@
     @media(max-width: 800px) {
     }
     @media(max-width: 640px) {
+    }
+  }
+  &.section3 {
+    .thumbs {
+      max-width: 1095px;
+      margin: 0 auto;
+    }
+    .ui-thumbmask {
+
     }
   }
 }

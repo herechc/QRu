@@ -83,11 +83,16 @@
     margin-bottom: 15px;
     margin-right: 10px;
     margin-left: 10px; }
-  .section.section2 .ui-thumbmask {
-    margin: 20px;
-    border-width: 0; }
-  @media (max-width: 1000px) {
+  .section.section2 {
+    display: none; }
     .section.section2 .ui-thumbmask {
-      margin: 10px; } }
+      margin: 20px;
+      border-width: 0; }
+    @media (max-width: 1000px) {
+      .section.section2 .ui-thumbmask {
+        margin: 10px; } }
+  .section.section3 .thumbs {
+    max-width: 1095px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=global.css.map */
