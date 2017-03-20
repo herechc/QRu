@@ -1,6 +1,7 @@
 .ui-thumbmask {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: inline-block; }
   .ui-thumbmask .img-thumbnail {
     padding: 0;
     border-radius: 0;
@@ -91,8 +92,13 @@
     @media (max-width: 1000px) {
       .section.section2 .ui-thumbmask {
         margin: 10px; } }
-  .section.section3 .thumbs {
-    max-width: 1095px;
+  .section.section3 {
+    display: none; }
+    .section.section3 .thumbs {
+      max-width: 1095px;
+      margin: 0 auto; }
+  .section.section4 .thumbs {
+    width: 1050px;
     margin: 0 auto; }
 
 /*# sourceMappingURL=global.css.map */

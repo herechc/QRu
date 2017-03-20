@@ -40,12 +40,19 @@
     }
   }
   &.section3 {
+    display: none;
     .thumbs {
       max-width: 1095px;
       margin: 0 auto;
     }
     .ui-thumbmask {
 
+    }
+  }
+  &.section4 {
+    .thumbs {
+      width: 1050px;
+      margin: 0 auto;
     }
   }
 }
