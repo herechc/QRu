@@ -1,0 +1,36 @@
+.navbar-inverse {
+  background-color: #3da8aa;
+  border-color: #3da8aa;
+  -webkit-transition: background-color 500ms, border-color 500ms;
+  .navbar-brand {
+    padding: ((50px-34)/2);
+  }
+  .navbar-toggle {
+    background-color: transparent !important;
+    border-color: transparent;
+  }
+  .navbar-toggle {
+    span:last-child {
+      width: 11px;
+      left: 11px;
+      position: relative;
+    }
+  }
+  .navbar-collapse {
+    border-color: transparent;
+    -webkit-transition: border-color 500ms;
+  }
+  .navbar-nav > li > a {
+    color: #fff;
+  }
+  .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    background-color: transparent;
+  }
+  &.opacity {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    .navbar-collapse {
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

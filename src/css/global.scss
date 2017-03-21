@@ -1,6 +1,7 @@
 @import "common/common";
 @import "common/ui-thumbmask";
 @import "common/ui-thumbnail";
+@import "common/navbar";
 @import "common/m-hd";
 
 .activebg {
@@ -38,6 +39,12 @@
     }
   }
   &.section1 {
+    .owl-carousel {
+      .slider {
+        background: #3da8aa no-repeat 50%;
+        background-size: cover;
+      }
+    }
   }
   &.section2 {
     //display: none;
