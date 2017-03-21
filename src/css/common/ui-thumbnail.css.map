@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,mBAAO;EACL,gBAAgB,EAAE,OAAO",
+"sources": ["ui-thumbnail.scss"],
+"names": [],
+"file": "ui-thumbnail.css"
+}

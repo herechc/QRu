@@ -1,4 +1,6 @@
+@import "common/common";
 @import "common/ui-thumbmask";
+@import "common/ui-thumbnail";
 @import "common/m-hd";
 
 .activebg {
@@ -16,43 +18,90 @@
   background-image: url("../images/nz-section-hd.png");
   background-position: 50% 50px;
   background-size: 50%;
+  background-repeat: no-repeat;
   .m-hd {
     margin-bottom: 15px;
     margin-right: 10px;
     margin-left: 10px;
   }
+
+  @media(max-width: 640px) {
+    .m-hd {
+      h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      p {
+        line-height: 23px;
+        font-size: 16px;
+      }
+    }
+  }
   &.section1 {
   }
   &.section2 {
-    display: none;
+    //display: none;
     .ui-thumbmask {
       margin: 20px;
       border-width: 0;
     }
     @media(max-width: 1000px) {
       .ui-thumbmask {
-        margin: 10px;
+        margin: 5px;
       }
     }
     @media(max-width: 800px) {
     }
     @media(max-width: 640px) {
+      .m-thumbs {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
     }
   }
   &.section3 {
-    display: none;
-    .thumbs {
+    //display: none;
+    .m-thumbs {
       max-width: 1095px;
       margin: 0 auto;
     }
     .ui-thumbmask {
 
     }
+
+    @media(max-width: 640px) {
+      .ui-thumbmask {
+        margin: 5px;
+      }
+      .m-thumbs {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
   }
   &.section4 {
-    .thumbs {
-      width: 1050px;
+    .m-thumbs {
+      max-width: 1050px;
       margin: 0 auto;
+    }
+    .ui-thumbnail {
+      margin: 0 15px 30px;
+    }
+
+    @media(max-width: 640px) {
+      .ui-thumbnail {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &.section5 {
+    @media(max-width: 640px) {
+      .qrcode {
+        margin: 0 auto;
+      }
+      .m-bd {
+        text-align: center;
+      }
     }
   }
 }

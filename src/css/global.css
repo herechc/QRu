@@ -1,3 +1,15 @@
+.ui-thumbnail h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+
+.btn-more {
+  color: #3da8aa;
+  min-width: 148px;
+  border: solid #3da8aa 1px; }
+
 .ui-thumbmask {
   position: relative;
   overflow: hidden;
@@ -54,6 +66,58 @@
   .ui-thumbmask .sumbox h4,
   .ui-thumbmask .sumbox p {
     display: none; } }
+.ui-thumbnail {
+  text-align: justify; }
+  .ui-thumbnail .txtbox {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .ui-thumbnail p.date {
+    line-height: 23px;
+    font-size: 24px;
+    color: #9a9a9a;
+    padding-top: 6px; }
+  .ui-thumbnail h4 {
+    font-size: 18px;
+    line-height: 24px;
+    color: #373737;
+    padding-bottom: 8px;
+    position: relative; }
+    .ui-thumbnail h4:after {
+      background-color: #373737;
+      content: '';
+      width: 36px;
+      height: 3px;
+      overflow: hidden;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+  .ui-thumbnail p {
+    line-height: 18px;
+    font-size: 14px;
+    color: #9a9a9a; }
+  .ui-thumbnail:hover {
+    background-color: #3DA8AA; }
+    .ui-thumbnail:hover p.date,
+    .ui-thumbnail:hover h4 {
+      color: #fff; }
+      .ui-thumbnail:hover p.date:after,
+      .ui-thumbnail:hover h4:after {
+        background-color: #fff; }
+    .ui-thumbnail:hover p.about {
+      color: #fffefe; }
+
+@media (max-width: 640px) {
+  .ui-thumbnail .txtbox {
+    padding-left: 10px; }
+  .ui-thumbnail p.date {
+    line-height: 24px;
+    font-size: 18px;
+    padding-top: 0; }
+  .ui-thumbnail h4 {
+    font-size: 14px; }
+    .ui-thumbnail h4:after {
+      height: 2px; } }
 .m-hd h3 {
   font-size: 24px;
   color: #3da8aa;
@@ -79,26 +143,50 @@
 .section {
   background-image: url("../images/nz-section-hd.png");
   background-position: 50% 50px;
-  background-size: 50%; }
+  background-size: 50%;
+  background-repeat: no-repeat; }
   .section .m-hd {
     margin-bottom: 15px;
     margin-right: 10px;
     margin-left: 10px; }
-  .section.section2 {
-    display: none; }
+  @media (max-width: 640px) {
+    .section .m-hd h3 {
+      font-size: 20px;
+      margin-bottom: 15px; }
+    .section .m-hd p {
+      line-height: 23px;
+      font-size: 16px; } }
+  .section.section2 .ui-thumbmask {
+    margin: 20px;
+    border-width: 0; }
+  @media (max-width: 1000px) {
     .section.section2 .ui-thumbmask {
-      margin: 20px;
-      border-width: 0; }
-    @media (max-width: 1000px) {
-      .section.section2 .ui-thumbmask {
-        margin: 10px; } }
-  .section.section3 {
-    display: none; }
-    .section.section3 .thumbs {
-      max-width: 1095px;
-      margin: 0 auto; }
-  .section.section4 .thumbs {
-    width: 1050px;
+      margin: 5px; } }
+  @media (max-width: 640px) {
+    .section.section2 .m-thumbs {
+      margin-left: 5px;
+      margin-right: 5px; } }
+  .section.section3 .m-thumbs {
+    max-width: 1095px;
     margin: 0 auto; }
+  @media (max-width: 640px) {
+    .section.section3 .ui-thumbmask {
+      margin: 5px; }
+    .section.section3 .m-thumbs {
+      margin-left: 5px;
+      margin-right: 5px; } }
+  .section.section4 .m-thumbs {
+    max-width: 1050px;
+    margin: 0 auto; }
+  .section.section4 .ui-thumbnail {
+    margin: 0 15px 30px; }
+  @media (max-width: 640px) {
+    .section.section4 .ui-thumbnail {
+      margin-bottom: 15px; } }
+  @media (max-width: 640px) {
+    .section.section5 .qrcode {
+      margin: 0 auto; }
+    .section.section5 .m-bd {
+      text-align: center; } }
 
 /*# sourceMappingURL=global.css.map */

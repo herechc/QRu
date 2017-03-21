@@ -1,0 +1,26 @@
+{
+  "name": "qru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.8",
+    "fullpage.js": "^2.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"browser-sync start --server --files 'src/**.html,src/**.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herechc/QRu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herechc/QRu/issues"
+  },
+  "homepage": "https://github.com/herechc/QRu#readme"
+}

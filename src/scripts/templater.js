@@ -1,7 +1,7 @@
 $(function () {
     $("#fullpage").fullpage({
         verticalCentered: true,
-        css3: false
+        responsiveWidth: 0,
     });
-    // $.fn.fullpage.moveTo(2);
+    $.fn.fullpage.moveTo(4);
 });
